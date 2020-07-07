@@ -21,3 +21,14 @@
   + Evaluated models by MAE and RMSE as well as analyzed results by visualizing interactive plots to show prediction values in comparison to true values in different times and regions.
 
 + **Keywords: Exploratory Data Analysis, Feature Engineering, Data Visualization, Machine Learning, Prediction Modeling, Linear Regression, Random Forest, XGBoost, LightGBM, BigQuery, SQL, Python**
+
+Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
+
+```
+proj/
+├── doc/ project notebooks.
+└── figs/ figures.
+```
+
+Please see each subfolder for a README file.
+
