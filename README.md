@@ -5,7 +5,12 @@
 + **Objectives**: The goal of this project is finding trends, identifying problems, and making predictions on taxi demand to ultimately maximize revenue.
 
 + **Summary**:
-
+  + Through explorary data analysis, I analyzed taxi demand by different times and regions and created visualizations, summarizing their main characteristics and trends. Some key visualizations and findins are as follows:
+  
+  + Insights from EDA: taxi demand vary by different times and regions. If we can predict taxi demand given different times and regions, we can possibly maximize revenue by placing more cars where demand is high.
+  
+  + Prediction:
+  
   + Images of interactive plots have been added to the notebooks for easier display. Download and run the code to see full interactive features of the plots.
 
 + **Contributions**:
