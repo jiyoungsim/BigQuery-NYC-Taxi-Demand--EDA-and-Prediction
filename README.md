@@ -18,21 +18,27 @@
     + Peak: 18 ~ 19
     + Off-peak: 5 
     
-    <img src="figs/trips by hour-weekend weekday.png" width="380">  <img src="figs/demand_by_dow_heatmap.png" width="380">
+    <img src="figs/trips by hour-weekend weekday.png" width="60">
+    
+    <img src="figs/demand_by_dow_heatmap.png" width="600">
     
     <img src="figs/hourly_boxplots_weekday.png" width="380">  <img src="figs/hourly_boxplots_weekend.png" width="380">
     
     On weekdays, more calls are in the morning and evening. On weekends, calls ten to increase in late hours.
      
-    <img src="figs/short_long.png" width="600">
+    <img src="figs/short_long.png" width="800">
+    
     The majority of the trips have distances under 30. So I divided trips into two groups--short trips (<30) and long trips (>=30). Peak times in the two groups are as follows:
     + Short trips: 18:00 ~ 20:00
     + Long trips: 15:00 ~ 17:00
     
     <img src="figs/taxi map.png" width="600">
+    
     Visualized number of calls by zipcode after reverse geocoding (longitude/latitude to address) using Interactive Map in Kepler.gl.
     
-    <img src="figs/daily_zipcode_boxplots.png" width="380"> <img src="figs/hourly_zipcode_heatmap.png" width="380">
+    <img src="figs/daily_zipcode_boxplots.png" width="600">
+    
+    <img src="figs/hourly_zipcode_heatmap.png" width="600">
     
     From the above visualizations, we can observe that there is a big difference in demand in different parts of the city.
     
@@ -41,7 +47,7 @@
   + Prediction: four prediction models have been trained.
     + Baseline simple linear model: chosen as baseline model for easy interpretability
     
-    <img src="figs/largest_coeff.png" width="380">  <img src="figs/time_coeff.png" width="380">
+    <img src="figs/largest_coeff.png" width="600">  <img src="figs/time_coeff.png" width="600">
     
     Dummy variables for zipcodes had the largest coefficient values.
     
@@ -51,17 +57,24 @@
     + LightGBM regressor
     
     <img src="figs/results.JPG" width="300">
+    
     Random Forest model showed the best results. The feature importance is as follows.
     
     <img src="figs/rf_feature_importance.png" width="600">
     
     The below graphs show the true values and predictions from Random Forest displayed by different times, showing where the model performed better predicting and where it did not. Note that it performs better for more important features.
     
-    <img src="figs/pred_by_datetime.png" width="380"> <img src="figs/pred_by_zip.png" width="380">
+    <img src="figs/pred_by_datetime.png" width="600">
     
-    <img src="figs/pred_by_hour.png" width="380"> <img src="figs/pred_by_dow.png" width="380">
+    <img src="figs/pred_by_zip.png" width="600">
     
-    <img src="figs/pred_by_day.png" width="380"> <img src="figs/pred_by_is_weekend.png" width="380">
+    <img src="figs/pred_by_hour.png" width="600">
+    
+    <img src="figs/pred_by_dow.png" width="600">
+    
+    <img src="figs/pred_by_day.png" width="600">
+    
+    <img src="figs/pred_by_is_weekend.png" width="600">
   
 
 + **Contributions**:
