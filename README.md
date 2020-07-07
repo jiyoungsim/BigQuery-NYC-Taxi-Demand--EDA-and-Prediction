@@ -12,6 +12,7 @@
   + Prediction:
   
   + Images of interactive plots have been added to the notebooks for easier display. Download and run the code to see full interactive features of the plots.
+  + This project was run in Kaggle notebook using Kaggle's public dataset BigQuery integration, which allows each Kaggle user to scan 5TB every 30 days for free (reset every 30 days).
 
 + **Contributions**:
   + Cleaned, transformed, and loaded data using SQL and BigQuery API Client library to conduct project with BigQuery public data in Python.
