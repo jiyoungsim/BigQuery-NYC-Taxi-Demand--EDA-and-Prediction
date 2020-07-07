@@ -2,9 +2,12 @@
 
 + This project was conducted by Young Sim.
 
++ **Keywords: Exploratory Data Analysis, Feature Engineering, Data Visualization, Machine Learning, Prediction Modeling, Linear Regression, Random Forest, XGBoost, LightGBM, BigQuery, SQL, Python**
+
 + **Objectives**: The goal of this project is finding trends, identifying problems, and making predictions on taxi demand to ultimately maximize revenue.
 
 + **Summary**:
+  Below is the summary and key takeaways from the project. See project notebooks for more details.
   + NYC taxi data is loaded from BigQuery public data using SQL and BigQuery API Client library.
   + EDA: Through explorary data analysis, I analyzed taxi demand by different times and regions and created interactive visualizations, summarizing their main characteristics and trends. Some key visualizations and findings are as follows:
     
@@ -82,8 +85,6 @@
   + Performed exploratory data analysis of taxi calls based on time and region in order to find trends and identify problems to solve.
   + Produced feature engineering for categorical feature, tuned parameters, and trained models such as baseline simple linear regression, Random Forest, XGBoost, and LightGBM to predict taxi call demands in different times and regions.
   + Evaluated models by MAE and RMSE as well as analyzed results by visualizing interactive plots to show prediction values in comparison to true values in different times and regions.
-
-+ **Keywords: Exploratory Data Analysis, Feature Engineering, Data Visualization, Machine Learning, Prediction Modeling, Linear Regression, Random Forest, XGBoost, LightGBM, BigQuery, SQL, Python**
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
