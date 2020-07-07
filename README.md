@@ -5,14 +5,64 @@
 + **Objectives**: The goal of this project is finding trends, identifying problems, and making predictions on taxi demand to ultimately maximize revenue.
 
 + **Summary**:
-  + Through explorary data analysis, I analyzed taxi demand by different times and regions and created visualizations, summarizing their main characteristics and trends. Some key visualizations and findins are as follows:
-  
+  + NYC taxi data is loaded from BigQuery public data using SQL and BigQuery API Client library.
+  + EDA: Through explorary data analysis, I analyzed taxi demand by different times and regions and created interactive visualizations, summarizing their main characteristics and trends. Some key visualizations and findings are as follows:
+    
+    <img src="figs/taxi demand.png" width="600">
+    
+    Overview of taxi demand: dip on January 27th due to January 2015 North American blizzard.
+     
+    <img src="figs/trips by hour.png" width="600">
+    
+    Trips by hour:
+    + Peak: 18 ~ 19
+    + Off-peak: 5 
+    
+    <img src="figs/trips by hour-weekend weekday.png" width="350">  <img src="figs/demand_by_dow_heatmap.png" width="350">
+    
+    <img src="figs/hourly_boxplots_weekday.png" width="350">  <img src="figs/hourly_boxplots_weekend.png" width="350">
+    
+    On weekdays, more calls are in the morning and evening. On weekends, calls ten to increase in late hours.
+     
+    <img src="figs/short_long.png" width="600">
+    The majority of the trips have distances under 30. So I divided trips into two groups--short trips (<30) and long trips (>=30). Peak times in the two groups are as follows:
+    + Short trips: 18:00 ~ 20:00
+    + Long trips: 15:00 ~ 17:00
+    
+    <img src="figs/taxi map.png" width="600">
+    Visualized number of calls by zipcode after reverse geocoding (longitude/latitude to address) using Interactive Map in Kepler.gl.
+    
+    <img src="figs/daily_zipcode_boxplots.png" width="350"> <img src="figs/hourly_zipcode_heatmap.png" width="350">
+    
+    From the above visualizations, we can observe that there is a big difference in demand in different parts of the city.
+    
   + Insights from EDA: taxi demand vary by different times and regions. If we can predict taxi demand given different times and regions, we can possibly maximize revenue by placing more cars where demand is high.
   
-  + Prediction:
+  + Prediction: four prediction models have been trained.
+    + Baseline simple linear model: chosen as baseline model for easy interpretability
+    
+    <img src="figs/largest_coeff.png" width="350">  <img src="figs/time_coeff.png" width="350">
+    
+    Dummy variables for zipcodes had the largest coefficient values.
+    
+    Additional models are as follows:
+    + Random forest regressor
+    + XGBoost regressor
+    + LightGBM regressor
+    
+    <img src="figs/results.JPG" width="300">
+    Random Forest model showed the best results. The feature importance is as follows.
+    
+    <img src="figs/rf_feature_importance.png" width="600">
+    
+    The below graphs show the true values and predictions from Random Forest displayed by different times, showing where the model performed better predicting and where it did not. Note that it performs better for more important features.
+    
+    <img src="figs/pred_by_datetime.png" width="350"> <img src="figs/pred_by_zip.png" width="350">
+    
+    <img src="figs/pred_by_hour.png" width="350"> <img src="figs/pred_by_week.png" width="350">
+    
+    <img src="figs/pred_by_day.png" width="350"> <img src="figs/pred_by_is_weekend.png" width="350">
   
-  + Images of interactive plots have been added to the notebooks for easier display. Download and run the code to see full interactive features of the plots.
-  + This project was run in Kaggle notebook using Kaggle's public dataset BigQuery integration, which allows each Kaggle user to scan 5TB every 30 days for free (reset every 30 days).
 
 + **Contributions**:
   + Cleaned, transformed, and loaded data using SQL and BigQuery API Client library to conduct project with BigQuery public data in Python.
