@@ -18,7 +18,7 @@
     + Peak: 18 ~ 19
     + Off-peak: 5 
     
-    <img src="figs/trips by hour-weekend weekday.png" width="60">
+    <img src="figs/trips by hour-weekend weekday.png" width="600">
     
     <img src="figs/demand_by_dow_heatmap.png" width="600">
     
@@ -32,7 +32,7 @@
     + Short trips: 18:00 ~ 20:00
     + Long trips: 15:00 ~ 17:00
     
-    <img src="figs/taxi map.png" width="600">
+    <img src="figs/taxi map.png" width="800">
     
     Visualized number of calls by zipcode after reverse geocoding (longitude/latitude to address) using Interactive Map in Kepler.gl.
     
@@ -60,21 +60,21 @@
     
     Random Forest model showed the best results. The feature importance is as follows.
     
-    <img src="figs/rf_feature_importance.png" width="600">
+    <img src="figs/rf_feature_importance.png" width="800">
     
     The below graphs show the true values and predictions from Random Forest displayed by different times, showing where the model performed better predicting and where it did not. Note that it performs better for more important features.
     
-    <img src="figs/pred_by_datetime.png" width="600">
+    <img src="figs/pred_by_datetime.png" width="800">
     
-    <img src="figs/pred_by_zip.png" width="600">
+    <img src="figs/pred_by_zip.png" width="800">
     
-    <img src="figs/pred_by_hour.png" width="600">
+    <img src="figs/pred_by_hour.png" width="800">
     
-    <img src="figs/pred_by_dow.png" width="600">
+    <img src="figs/pred_by_dow.png" width="800">
     
-    <img src="figs/pred_by_day.png" width="600">
+    <img src="figs/pred_by_day.png" width="800">
     
-    <img src="figs/pred_by_is_weekend.png" width="600">
+    <img src="figs/pred_by_is_weekend.png" width="800">
   
 
 + **Contributions**:
