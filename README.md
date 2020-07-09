@@ -94,7 +94,7 @@
       + Try other models
       + More parameter tuning
       + Automate updates for new data and retraining
-      
+      + How often should the model be retrained? With how much of data (how many days/months/years back)?
 + **Contributions**:
   + Cleaned, transformed, and loaded data using SQL and BigQuery API Client library to conduct project with BigQuery public data in Python.
   + Performed exploratory data analysis of taxi calls based on time and region in order to find trends and identify problems to solve.
