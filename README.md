@@ -79,7 +79,7 @@
     
     <img src="figs/pred_by_is_weekend.png" width="800">
     
-    Based on feature importance and the above visualizations, we can conclude that the location ,represented by zipcode, is the most important feature in predicting taxi demand. Overall, this project will be a good baseline for further model development for taxi demand prediction, with the ultimate goal of maximizing revenue.
+    Based on feature importance and the above visualizations, we can conclude that the location, represented by zipcode, is the most important feature in predicting taxi demand. Overall, this project will be a good baseline for further model development for taxi demand prediction, with the ultimate goal of maximizing revenue.
     
   + Suggestions for further improvement:
     + Feature Engineeering:
