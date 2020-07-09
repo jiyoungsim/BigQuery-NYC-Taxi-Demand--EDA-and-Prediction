@@ -78,8 +78,23 @@
     <img src="figs/pred_by_day.png" width="800">
     
     <img src="figs/pred_by_is_weekend.png" width="800">
-  
-
+    
+    Based on feature importance and the above visualizations, we can conclude that the location ,represented by zipcode, is the most important feature in predicting taxi demand. Overall, this project will be a good baseline for further model development for taxi demand prediction, with the ultimate goal of maximizing revenue.
+    
+  + Suggestions for further improvement:
+    + Feature Engineeering:
+      + Add lagged variables (e.g. demand in the zipcode area one hour ago, one day ago, etc.)
+      + Mean encoding
+      + Would zipcode be the best way to represent location? Try other ways (e.g. geohash, h3 ...)
+      + Try half hour instead of hour feature
+    + Add more features:
+      + Holidays
+      + Weather
+    + Improvements in models:
+      + Try other models
+      + More parameter tuning
+      + Automate updates for new data and retraining
+      
 + **Contributions**:
   + Cleaned, transformed, and loaded data using SQL and BigQuery API Client library to conduct project with BigQuery public data in Python.
   + Performed exploratory data analysis of taxi calls based on time and region in order to find trends and identify problems to solve.
