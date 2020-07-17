@@ -48,7 +48,7 @@
   + Insights from EDA: taxi demand vary by different times and regions. If we can predict taxi demand given different times and regions, we can possibly maximize revenue by placing more cars where demand is high.
   
   + Prediction: four prediction models have been trained.
-    + Baseline simple linear model: chosen as baseline model for easy interpretability
+    + Baseline linear regression model: chosen as baseline model for easy interpretability
     
     <img src="figs/largest_coeff.png" width="600">  <img src="figs/time_coeff.png" width="600">
     
@@ -98,7 +98,7 @@
 + **Contributions**:
   + Cleaned, transformed, and loaded data using SQL and BigQuery API Client library to conduct project with BigQuery public data in Python.
   + Performed exploratory data analysis of taxi calls based on time and region in order to find trends and identify problems to solve.
-  + Produced feature engineering for categorical feature, tuned parameters, and trained models such as baseline simple linear regression, Random Forest, XGBoost, and LightGBM to predict taxi call demands in different times and regions.
+  + Produced feature engineering for categorical feature, tuned parameters, and trained models such as baseline linear regression, Random Forest, XGBoost, and LightGBM to predict taxi call demands in different times and regions.
   + Evaluated models by MAE and RMSE as well as analyzed results by visualizing interactive plots to show prediction values in comparison to true values in different times and regions.
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
